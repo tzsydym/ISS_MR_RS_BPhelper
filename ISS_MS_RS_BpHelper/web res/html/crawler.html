@@ -1,0 +1,313 @@
+﻿
+<div class="card">
+    <div class="card-image">
+        <img src="../IMG/teemo.jpg">
+        <span class="card-title">Teemo crawler</span>
+    </div>
+    <div class="card-content">
+        <p>Hut, two, three, four, captain teemo on duty!</p>
+        <div class="fixed-action-btn horizontal scale-transition direction-top direction-left" style="position: absolute; display: inline-block; right: 24px;">
+            <a class="btn-floating tooltipped btn-medium waves-effect waves-light cyan" data-position="top" data-tooltip="Menu">
+                <i class="large material-icons">menu</i>
+            </a>
+            <ul>
+                <li>
+                    <a class="btn-floating tooltipped green btn-small modal-trigger" style="opacity: 0; transform: scale(0.4) translateY(0px) translateX(40px);" data-position="top" data-tooltip="Start crawler" href="#modalScrawlerSettings">
+                        <i class="material-icons">sync</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating tooltipped activator blue btn-small modal-trigger" style="opacity: 0; transform: scale(0.4) translateY(0px) translateX(40px);" data-position="top" data-tooltip="Persist csv into memory" href="#persistSettings">
+                        <i class="material-icons">memory</i>
+                    </a>
+                </li>
+            </ul>
+        </div>        
+    </div>
+</div>
+<div id="modalScrawlerSettings" class="modal bottom-sheet">
+    <div class="modal-content" style="padding:5px">
+        <ul class="collection" style="margin-bottom:0rem;border-radius:10px;">
+            <li class="collection-item avatar">
+                <img src="../IMG/Lux-icon.png" alt="" class="circle" style="width:60px;height:60px;left:6px">
+                <span class="title">Select server region & rank to crawl</span>
+                <p>
+                    <a class="dropdown-trigger waves-effect waves-yellow btn-small btn-orange" href="#" data-target="dropdownServer_crawl" style="margin-right: 10px;"><i class="material-icons left">cloud</i>Server</a>
+                    <a class="dropdown-trigger waves-effect waves-yellow btn-small btn-orange" href="#" data-target="dropdownRank_crawl" style="margin-right: 10px;"><i class="material-icons left">star</i>Rank</a>
+                </p>
+                <ul id="dropdownServer_crawl" class="dropdown-content">
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/world.png" alt="Contact Person">
+                            <a style="color:#f1a12a;font-size: 12px">All</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/europe.png" alt="Contact Person">
+                            <a style="color:#f1a12a;font-size: 12px">Europe West</a>
+                        </div>
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/europe.png" alt="Contact Person">
+                            <a style="color:#f1a12a;font-size: 12px">Europe Nordic</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/brazil.png" alt="Contact Person">
+                            <a style="color:#f1a12a;font-size: 12px">Brazil</a>
+                        </div>                       
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/argentina.png" alt="Contact Person">
+                            <a style="color:#f1a12a;font-size: 12px">Latin America North</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/argentina.png" alt="Contact Person">
+                            <a style="color:#f1a12a;font-size: 12px">Latin America South</a>
+                        </div>
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/america.png" alt="Contact Person">
+                            <a style="color:#f1a12a;font-size: 12px">North America</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/australia.png" alt="Contact Person">
+                            <a style="color:#f1a12a;font-size: 12px">Oceania</a>
+                        </div>
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/russia.png" alt="Contact Person">
+                            <a style="color:#f1a12a;font-size: 12px">Russia</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/turkey.png" alt="Contact Person">
+                            <a style="color:#f1a12a;font-size: 12px">Turkey</a>
+                        </div>
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/japan.png" alt="Contact Person">
+                            <a style="color:#f1a12a;font-size: 12px">Japan</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/korea.png" alt="Contact Person">
+                            <a style="color:#f1a12a;font-size: 12px">Korea</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="dropdownRank_crawl" class="dropdown-content">
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/Season_2019_-_Iron_1.png" alt="Contact Person">
+                            <a style="color:#f1a12a;font-size: 12px">IRON</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/Season_2019_-_Bronze_1.png" alt="Contact Person">
+                            <a style="color:#f1a12a;font-size: 12px">BRONZE</a>
+                        </div>
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/Season_2019_-_Silver_1.png" alt="Contact Person">
+                            <a style="color:#f1a12a;font-size: 12px">SILVER</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/Season_2019_-_Gold_1.png" alt="Contact Person">
+                            <a style="color:#f1a12a;font-size: 12px">GOLD</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/Season_2019_-_Platinum_1.png" alt="Contact Person">
+                            <a style="color:#f1a12a;font-size: 12px">PLATINUM</a>
+                        </div>
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/Season_2019_-_Diamond_1.png" alt="Contact Person">
+                            <a style="color:#f1a12a;font-size: 12px">DIAMOND</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/Season_2019_-_Challenger_1.png" alt="Contact Person">
+                            <a style="color:#f1a12a;font-size: 12px">MASTER</a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#!"class="secondary-content" style="color:#e4c16a"><i class="material-icons">bug_report</i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" id="startCrawler" class="modal-close waves-effect waves-green btn-flat">OK</a>
+    </div>
+</div>
+<div id="persistSettings" class="modal bottom-sheet">
+    <div class="modal-content" style="padding:5px">
+        <ul class="collection" style="margin-bottom:0rem;border-radius:10px;">
+            <li class="collection-item avatar">
+                <img src="../IMG/Ezreal-TPA-icon.png" alt="" class="circle" style="width:60px;height:60px;left:6px">
+                <span class="title">Select server region & rank to persist</span>
+                <p>
+                    <a class="dropdown-trigger waves-effect waves-purple btn-small btn-purple" href="#" data-target="dropdownServer_persist" style="margin-right: 10px;"><i class="material-icons left">cloud</i>Server</a>
+                    <a class="dropdown-trigger waves-effect waves-purple btn-small btn-purple" href="#" data-target="dropdownRank_persist" style="margin-right: 10px;"><i class="material-icons left">star</i>Rank</a>
+                </p>
+                <ul id="dropdownServer_persist" class="dropdown-content">
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/world.png" alt="Contact Person">
+                            <a style="color:#be35d7;font-size: 12px">All</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/europe.png" alt="Contact Person">
+                            <a style="color:#be35d7;font-size: 12px">Europe West</a>
+                        </div>
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/europe.png" alt="Contact Person">
+                            <a style="color:#be35d7;font-size: 12px">Europe Nordic</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/brazil.png" alt="Contact Person">
+                            <a style="color:#be35d7;font-size: 12px">Brazil</a>
+                        </div>
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/argentina.png" alt="Contact Person">
+                            <a style="color:#be35d7;font-size: 12px">Latin America North</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/argentina.png" alt="Contact Person">
+                            <a style="color:#be35d7;font-size: 12px">Latin America South</a>
+                        </div>
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/america.png" alt="Contact Person">
+                            <a style="color:#be35d7;font-size: 12px">North America</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/australia.png" alt="Contact Person">
+                            <a style="color:#be35d7;font-size: 12px">Oceania</a>
+                        </div>
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/russia.png" alt="Contact Person">
+                            <a style="color:#be35d7;font-size: 12px">Russia</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/turkey.png" alt="Contact Person">
+                            <a style="color:#be35d7;font-size: 12px">Turkey</a>
+                        </div>
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/japan.png" alt="Contact Person">
+                            <a style="color:#be35d7;font-size: 12px">Japan</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/korea.png" alt="Contact Person">
+                            <a style="color:#be35d7;font-size: 12px">Korea</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="dropdownRank_persist" class="dropdown-content">
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/Season_2019_-_Iron_1.png" alt="Contact Person">
+                            <a style="color:#be35d7;font-size: 12px">IRON</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/Season_2019_-_Bronze_1.png" alt="Contact Person">
+                            <a style="color:#be35d7;font-size: 12px">BRONZE</a>
+                        </div>
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/Season_2019_-_Silver_1.png" alt="Contact Person">
+                            <a style="color:#be35d7;font-size: 12px">SILVER</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/Season_2019_-_Gold_1.png" alt="Contact Person">
+                            <a style="color:#be35d7;font-size: 12px">GOLD</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/Season_2019_-_Platinum_1.png" alt="Contact Person">
+                            <a style="color:#be35d7;font-size: 12px">PLATINUM</a>
+                        </div>
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/Season_2019_-_Diamond_1.png" alt="Contact Person">
+                            <a style="color:#be35d7;font-size: 12px">DIAMOND</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="chip" style="display:block;margin-bottom:0px;margin-right:0px;background-color:transparent">
+                            <img src="../IMG/Season_2019_-_Challenger_1.png" alt="Contact Person">
+                            <a style="color:#f1a12a;font-size: 12px">MASTER</a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#!" class="secondary-content" style="color:#d794de"><i class="material-icons">memory</i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" id="persistCsvData" class="modal-close waves-effect waves-green btn-flat">OK</a>
+    </div>
+</div>
