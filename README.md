@@ -42,7 +42,7 @@ This is where our product comes in to help, with nearly 150 champions available 
 
 `Refer to <Installation and User Guide> in project report at Github Folder: ProjectReport`
 
-### For detailed step with picture reference, please refer to Installation and User Guide in project report at Github Folder: ProjectReport
+### For detailed step with picture reference, please refer to https://github.com/tzsydym/ISS_MR_RS_BPhelper/blob/master/ProjectReport/Installation%20and%20User%20Guide.pdf
 Installation and User Guide to LOL Smart Ban/Pick Assistant
 1.	In a Windows PC, download the ‘debug.zip’ file from https://github.com/tzsydym/ISS_MR_RS_BPhelper/blob/master/debug.zip 
 2.	Unzip the file to any location.
