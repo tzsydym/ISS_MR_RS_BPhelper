@@ -1,23 +1,9 @@
-### [ Practice Module ] Project Submission Template: Github Repository & Zip File
 
-**[ Naming Convention ]** CourseCode-StartDate-BatchCode-TeamName-ProjectName.zip
-
-* **[ MTech Thru-Train Group Project Naming Example ]** IRS-PM-2020-01-18-IS02PT-GRP-AwsomeSG-HDB_BTO_Recommender.zip
-
-* **[ MTech Stackable Group Project Naming Example ]** IRS-PM-2020-01-18-STK02-GRP-AwsomeSG-HDB_BTO_Recommender.zip
-
-[Online editor for this README.md markdown file](https://pandao.github.io/editor.md/en.html "pandao")
-
----
-
-### <<<<<<<<<<<<<<<<<<<< Start of Template >>>>>>>>>>>>>>>>>>>>
-
----
 
 ## SECTION 1 : PROJECT TITLE
 ## LOL Smart Ban/Pick Assistant
 
-<img src="SystemCode/clips/static/hdb-bto.png"
+<img src="SystemCode/Screenshot 2020-05-07 at 4.00.24 PM.png"
      style="float: left; margin-right: 0px;" />
 
 ---
@@ -54,32 +40,37 @@ This is where our product comes in to help, with nearly 150 champions available 
 
 ## SECTION 5 : USER GUIDE
 
-`Refer to appendix <Installation & User Guide> in project report at Github Folder: ProjectReport`
+`Refer to <Installation and User Guide> in project report at Github Folder: ProjectReport`
 
-### [ 1 ] To run the system using iss-vm
+### For detailed step with picture reference, please refer to Installation and User Guide in project report at Github Folder: ProjectReport
+Installation and User Guide to LOL Smart Ban/Pick Assistant
+1.	In a Windows PC, download the ‘debug.zip’ file from https://github.com/tzsydym/ISS_MR_RS_BPhelper/blob/master/debug.zip 
+2.	Unzip the file to any location.
+3.	To launch the application, double click on the ‘ISS_MS_RS_BpHelper’ file  
+4.	Before using the application, please use the data crawler module to extract the data set, go the crawler page by opening the side menu
+ 
+5.	Click Menu > Start Crawler
+ 
+6.	Select region and rank based on own preference
+ 
+7.	Click ‘OK’ once selection done
+ 
+8.	Wait for the crawler to finish the job (could take a few minutes)
+9.	After the job finished, make sure 2 csv files are under ‘debug\crawler data\(Server selected)\(rank selected)’ 
+ 
+10.	Go back to the crawler page and click ‘menu again’, then click ‘Persist csv into memory’ to load the data into the application
+ 
+11.	Then select the server and rank from step 6/7 (or other server/rank that are available in  ‘debug\crawler data’ directory)
+ 
+12.	Now we are ready to use the ban/pick assistant, go to side menu and click ‘Home’
+ 
+13.	Click ‘start new game’ button at the bottom right corner to start a ban/pick session
+ 
+14.	The left side is our team’s ban/pick and the right side is enemy team, the flick symbol means who’s turn to ban/pick. 
+ 
+15.	Now go ahead and play with our tool and see what happened, the chart will be updated dynamically for each selection to show the relation values, you can make your ban/pick selection by clicking the button under the chart
+ 
 
-> download pre-built virtual machine from http://bit.ly/iss-vm
-
-> start iss-vm
-
-> open terminal in iss-vm
-
-> $ git clone https://github.com/telescopeuser/Workshop-Project-Submission-Template.git
-
-> $ source activate iss-env-py2
-
-> (iss-env-py2) $ cd Workshop-Project-Submission-Template/SystemCode/clips
-
-> (iss-env-py2) $ python app.py
-
-> **Go to URL using web browser** http://0.0.0.0:5000 or http://127.0.0.1:5000
-
-### [ 2 ] To run the system in other/local machine:
-### Install additional necessary libraries. This application works in python 2 only.
-
-> $ sudo apt-get install python-clips clips build-essential libssl-dev libffi-dev python-dev python-pip
-
-> $ pip install pyclips flask flask-socketio eventlet simplejson pandas
 
 ---
 ## SECTION 6 : PROJECT REPORT / PAPER
@@ -108,20 +99,12 @@ This is where our product comes in to help, with nearly 150 champions available 
 
 `Refer to Github Folder: Miscellaneous`
 
-### HDB_BTO_SURVEY.xlsx
-* Results of survey
-* Insights derived, which were subsequently used in our system
+### overallChampionsInfo.csv
+* Overall information for each champions in North America server, Gold rank
+* Win rate, ban rate, lane (role)
 
----
+### championCounter.csv
+* champion counter/teammate relations
+* what is each champion 'countered by', 'best against' and 'best with'
 
-### <<<<<<<<<<<<<<<<<<<< End of Template >>>>>>>>>>>>>>>>>>>>
 
----
-
-**This [Machine Reasoning (MR)](https://www.iss.nus.edu.sg/executive-education/course/detail/machine-reasoning "Machine Reasoning") course is part of the Analytics and Intelligent Systems and Graduate Certificate in [Intelligent Reasoning Systems (IRS)](https://www.iss.nus.edu.sg/stackable-certificate-programmes/intelligent-systems "Intelligent Reasoning Systems") series offered by [NUS-ISS](https://www.iss.nus.edu.sg "Institute of Systems Science, National University of Singapore").**
-
-**Lecturer: [GU Zhan (Sam)](https://www.iss.nus.edu.sg/about-us/staff/detail/201/GU%20Zhan "GU Zhan (Sam)")**
-
-[![alt text](https://www.iss.nus.edu.sg/images/default-source/About-Us/7.6.1-teaching-staff/sam-website.tmb-.png "Let's check Sam' profile page")](https://www.iss.nus.edu.sg/about-us/staff/detail/201/GU%20Zhan)
-
-**zhan.gu@nus.edu.sg**
